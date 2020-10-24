@@ -50,7 +50,7 @@
 
 --]]
 
-module(..., package.seeall);
+module("BinDecHex", package.seeall);
 
 local hex2bin = {
 	["0"] = "0000",
@@ -132,7 +132,7 @@ local ret = ""
 local i = 0
 
 
-	for i in string.gfind(s, ".") do
+	for i in string.gmatch(s, ".") do
 		i = string.lower(i)
 
 		ret = ret..hex2bin[i].." "

@@ -16,6 +16,11 @@ To see the version you have to go to menu [Help/About](https://github.com/0liv1e
 
 ## Changed to be done in Wireshark configuration
 
+Linux
+* mkdir -p ~/.local/lib/wireshark/plugins/
+* cp BinDecHex.lua omci.lua ~/.local/lib/wireshark/plugins/
+
+Windows
 * Go to your Wireshark project directory, on Windoze C:\Program Files\Wireshark
 * Open file init.lua
 * Add the following line at the end of this init.lua file: dofile("C:\\Path\\to\\my\\favourite\\folder\\omci.lua")
