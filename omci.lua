@@ -915,5 +915,5 @@ function omciproto.dissector (buffer, pinfo, tree)
 end
 
 -- Register the dissector
-local ether_table = DissectorTable.get( "ethertype" )
-ether_table:add(0x88B5, omciproto) 
+local table = DissectorTable.get( "wtap_encap" )
+table:add(wtap["USER0"], omciproto)
